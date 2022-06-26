@@ -1,23 +1,21 @@
 import './App.css';
+import AppLayout from 'containers/layout/AppLayout';
+import { ToastContainer } from "react-toastify";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return [
+    <AppLayout key="layout">
+    </AppLayout>,
+    <ToastContainer
+      key="toast"
+      hideProgressBar
+      pauseOnHover={false}
+      pauseOnFocusLoss={false}
+      autoClose={3000}
+      position="top-right"
+    />,
+  ];
+
 }
 
 export default App;
