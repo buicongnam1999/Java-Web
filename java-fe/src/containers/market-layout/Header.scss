@@ -1,0 +1,83 @@
+.header {
+    .global-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ec9d49;
+        width: 100%;
+        min-width: 1160px;
+        border-bottom: 1px solid #ccc;
+        height: 39px;
+        font-family: Tahoma, Arial, Helvetica, sans-serif;
+        z-index: 999;
+
+        .navbar {
+            font-family: 'Dosis', sans-serif;
+            min-height: 40px;
+            display: table;
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid transparent;
+
+            >li {
+                position: relative;
+                display: inline-block;
+                list-style-type: none;
+                text-align: center;
+                margin: 0;
+                border-left: 0;
+                border: 1px solid rgba(0, 0, 0, .5);
+                line-height: 35px;
+                transition: all .3s ease-in-out;
+
+                a::after {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    top: 0;
+                    left: 0px;
+                    background: url("../../assets/images/backgrounds/background-li.png");
+                }
+
+                >a {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    text-decoration: none;
+                    font-size: 12px;
+                    color: #fff;
+                    text-shadow: 0 -1 0 rgb(0 0 0 /40);
+                    transition: all .3s ease-in-out;
+
+                    span {
+                        font-weight: 700;
+                        font-size: 14px;
+                        margin: 0 15px 0 0;
+                        padding: 0 5px;
+
+                        :hover {}
+                    }
+                }
+            }
+
+            li::before {
+                position: absolute;
+                display: block;
+                content: "";
+                z-index: 1;
+                width: 100%;
+                height: 18px;
+                bottom: -9px;
+                left: 2;
+                opacity: 4;
+            }
+
+        }
+
+        .color-navbar>li {
+            background-color: #ea7900;
+        }
+    }
+}
