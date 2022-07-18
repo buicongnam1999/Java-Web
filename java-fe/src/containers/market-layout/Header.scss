@@ -20,6 +20,14 @@
             margin: 0 auto;
             position: relative;
             border: 1px solid transparent;
+            li {
+                background: url("../../assets/images/backgrounds/background-li.png");
+                padding: 0 20px 0 10px;
+            }
+
+            li:hover i{
+                color: brown;
+            }
 
             >li {
                 position: relative;
@@ -31,7 +39,6 @@
                 border: 1px solid rgba(0, 0, 0, .5);
                 line-height: 35px;
                 transition: all .3s ease-in-out;
-
                 a::after {
                     position: absolute;
                     display: block;
@@ -54,11 +61,17 @@
                     span {
                         font-weight: 700;
                         font-size: 14px;
-                        margin: 0 15px 0 0;
-                        padding: 0 5px;
-
-                        :hover {}
+                        // margin: 0 15px 0 0;
+                        // padding: 0 5px;
                     }
+                    
+                    span .right{
+                        margin: 0;
+                    }
+                }
+
+                a {
+                    padding: 0px 20px 0 0;
                 }
             }
 
@@ -74,10 +87,65 @@
                 opacity: 4;
             }
 
+            li:hover .home {
+                background-position: 0px 20px;
+            }
+
+            li:hover .download {
+                background-position: -40px 20px;
+            }
+
+            li:hover .login {
+                background-position: -100px 20px;
+            }
         }
 
         .color-navbar>li {
             background-color: #ea7900;
+        }
+
+        .icon20 {
+            position: relative;
+            float: left;
+            display: block;
+            margin: 6px 5px 0;
+            width: 20px;
+            height: 20px;
+            transition: all .3s ease-in-out;
+        }
+
+        .icon25 {
+            position: relative;
+            float: right;
+            display: block;
+            margin: 6px 5px 0;
+            width: 28px;
+            height: 25px;
+        }
+        
+        .home {
+            background: url("../../assets/images/icons/item1.png");
+        }
+        .download {
+            background: url("../../assets/images/icons/item1.png");
+            background-position: -40px -0px;
+        }
+        .login {
+            background: url("../../assets/images/icons/item1.png");
+            background-position: -100px 0;
+        }
+        .maincoin {
+            background: url("../../assets/images/icons/xu.png");
+        }
+        .maincoinfree {
+            background: url("../../assets/images/icons/xu-khoa.png");
+        }
+        .maingnb {
+            background: url("../../assets/images/icons/gold.png");
+        }
+        .fa-sign-out {
+            background: url("../../assets/images/icons/item1.png");
+            background-position: -40px 0;
         }
     }
 }
